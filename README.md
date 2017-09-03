@@ -9,7 +9,7 @@ Utilizzare il software di installazione "Attack From Space.msi"
 
 ### Descrizione del Gioco ###
 
-L'obiettivo del gioco Ã¨ quello di riuscire a distruggere tutti i meteoriti lanciati contro la navicella
+L'obiettivo del gioco è quello di riuscire a distruggere tutti i meteoriti lanciati contro la navicella
 per evitare la sua distruzione e per evitare che i meteoriti raggiungano la Terra, cercardo di distruggere
 il maggior numero di meteoriti possibili.
 Il giocatore ha 3 vite totali.
@@ -23,3 +23,6 @@ a sinistra, il giocatore perde una vita.
 Usare le frecce direzionali per muovere la navicella spaziale.
 Per sparare itilizzare il tasto "Spazio".
 Per uscire dal gioco premere il tasto "Esc".
+
+### Requisiti di Sistema ###
+Sistema Operativo Windows
