@@ -1,0 +1,29 @@
+# Project: AttackFromSpace
+# Makefile created by Dev-C++ 4.9.9.0
+
+CPP  = g++.exe
+CC   = gcc.exe
+WINDRES = windres.exe
+RES  = 
+OBJ  = main.o $(RES)
+LINKOBJ  = main.o $(RES)
+LIBS =  -L"C:/Dev-Cpp/lib" -lglut32 -lglu32 -lopengl32 -lwinmm -lgdi32 -mwindows -lalleg 
+INCS =  -I"C:/Dev-Cpp/include" 
+CXXINCS =  -I"C:/Dev-Cpp/include/c++/3.3.1"  -I"C:/Dev-Cpp/include/c++/3.3.1/mingw32"  -I"C:/Dev-Cpp/include/c++/3.3.1/backward"  -I"C:/Dev-Cpp/lib/gcc-lib/mingw32/3.3.1/include"  -I"C:/Dev-Cpp/include" 
+BIN  = AttackFromSpace.exe
+CXXFLAGS = $(CXXINCS)  
+CFLAGS = $(INCS)  
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before AttackFromSpace.exe all-after
+
+
+clean: clean-custom
+	rm -f $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CC) $(LINKOBJ) -o "AttackFromSpace.exe" $(LIBS)
+
+main.o: main.c C:/Dev-Cpp/include/allegro.h   C:/Dev-Cpp/include/allegro/base.h C:/Dev-Cpp/include/errno.h   C:/Dev-Cpp/include/_mingw.h C:/Dev-Cpp/include/limits.h   C:/Dev-Cpp/include/stdarg.h C:/Dev-Cpp/include/stddef.h   C:/Dev-Cpp/include/stdlib.h C:/Dev-Cpp/include/time.h   C:/Dev-Cpp/include/sys/types.h   C:/Dev-Cpp/include/allegro/internal/alconfig.h   C:/Dev-Cpp/include/allegro/platform/alplatf.h   C:/Dev-Cpp/include/allegro/platform/almngw32.h C:/Dev-Cpp/include/io.h   C:/Dev-Cpp/include/stdint.h C:/Dev-Cpp/include/fcntl.h   C:/Dev-Cpp/include/direct.h C:/Dev-Cpp/include/malloc.h   C:/Dev-Cpp/include/allegro/platform/astdint.h   C:/Dev-Cpp/include/allegro/system.h   C:/Dev-Cpp/include/allegro/unicode.h   C:/Dev-Cpp/include/allegro/config.h   C:/Dev-Cpp/include/allegro/inline/system.inl   C:/Dev-Cpp/include/allegro/debug.h C:/Dev-Cpp/include/allegro/mouse.h   C:/Dev-Cpp/include/allegro/timer.h   C:/Dev-Cpp/include/allegro/keyboard.h   C:/Dev-Cpp/include/allegro/joystick.h   C:/Dev-Cpp/include/allegro/palette.h C:/Dev-Cpp/include/allegro/gfx.h   C:/Dev-Cpp/include/allegro/3d.h C:/Dev-Cpp/include/allegro/fixed.h   C:/Dev-Cpp/include/allegro/inline/gfx.inl   C:/Dev-Cpp/include/allegro/inline/asm.inl   C:/Dev-Cpp/include/allegro/platform/al386gcc.h   C:/Dev-Cpp/include/allegro/color.h   C:/Dev-Cpp/include/allegro/inline/color.inl   C:/Dev-Cpp/include/allegro/draw.h   C:/Dev-Cpp/include/allegro/inline/draw.inl   C:/Dev-Cpp/include/allegro/rle.h   C:/Dev-Cpp/include/allegro/inline/rle.inl   C:/Dev-Cpp/include/allegro/compiled.h C:/Dev-Cpp/include/allegro/text.h   C:/Dev-Cpp/include/allegro/font.h C:/Dev-Cpp/include/allegro/fli.h   C:/Dev-Cpp/include/allegro/gui.h C:/Dev-Cpp/include/allegro/sound.h   C:/Dev-Cpp/include/allegro/digi.h C:/Dev-Cpp/include/allegro/stream.h   C:/Dev-Cpp/include/allegro/midi.h C:/Dev-Cpp/include/allegro/file.h   C:/Dev-Cpp/include/allegro/lzss.h C:/Dev-Cpp/include/allegro/datafile.h   C:/Dev-Cpp/include/allegro/fmaths.h   C:/Dev-Cpp/include/allegro/inline/fmaths.inl   C:/Dev-Cpp/include/allegro/matrix.h   C:/Dev-Cpp/include/allegro/inline/matrix.inl   C:/Dev-Cpp/include/allegro/quat.h C:/Dev-Cpp/include/allegro/3dmaths.h   C:/Dev-Cpp/include/allegro/inline/3dmaths.inl   C:/Dev-Cpp/include/allegro/alcompat.h C:/Dev-Cpp/include/allegro/fix.h   C:/Dev-Cpp/include/allegro/inline/fix.inl   C:/Dev-Cpp/include/allegro/platform/alwin.h C:/Dev-Cpp/include/stdio.h   dati.h discovolante.h esplosione.h missile.h
+	$(CC) -c main.c -o main.o $(CFLAGS)
